@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nivel1">#025B8B</color>
+    <color name="nivel2">#015305</color>
+    <color name="nivel3">#D89A00</color>
+    <color name="nivel4">#ED0202</color>
+    <color name="nivel5">#63001F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
