@@ -4,5 +4,5 @@
     <string name="label_altura">Altura(ex: 1,78m)</string>
     <string name="label_btn">Calcular</string>
     <string name="label_result" />
-    <string name="label_title">IMC</string>
+    <string name="label_title">Indice de Massa Corporal</string>
 </resources>

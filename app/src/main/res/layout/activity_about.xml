@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/titleAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Índice de massa corporal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="32dp"
+        />
+
+    //colocar linha de divisão
+
+    <TextView
+        android:id="@+id/txtAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="      O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS)."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@id/titleAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="32dp"
+        />
+    //colocar linha de divisão
+    <TextView
+        android:id="@+id/subtitleAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Como calcular"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAbout"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="32dp"/>
+    //colocar linha de divisão
+    <TextView
+        android:id="@+id/txtCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em quilogramas e a altura em metros."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/subtitleAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="32dp"
+        />
+    //colocar linha de divisão
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtCalc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_imc"
+        android:layout_marginTop="14dp"/>
+
+
+    <TextView
+        android:id="@+id/txtFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fonte: https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imgFormula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="32dp"
+        />
+
+
+    <Button
+        android:id="@+id/returnBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:padding="16dp"
+        android:text="Retornar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
