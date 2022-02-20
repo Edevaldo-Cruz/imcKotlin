@@ -66,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="32dp"
         />
-    //colocar linha de divisão
+    //colocar linha de divisão.
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgFormula"
