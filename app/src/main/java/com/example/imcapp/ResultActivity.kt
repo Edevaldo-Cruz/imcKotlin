@@ -60,7 +60,7 @@ class ResultActivity : AppCompatActivity() {
                 binding.titleHelp.text = null
                 binding.txtHelp.text = null
             }
-            imc in 25.0..29.9 -> {
+            imc in 24.91..29.9 -> {
                 result = getString(R.string.label_imc_25)
                 binding.resultYour.setBackgroundColor(ContextCompat.getColor(this,
                     R.color.nivel3
@@ -69,7 +69,7 @@ class ResultActivity : AppCompatActivity() {
                 binding.titleHelp.text = getString(R.string.label_download_BMI)
                 binding.txtHelp.text = getString(R.string.label_text_download_BMI)
             }
-            imc in 30.0..34.9 -> {
+            imc in 29.91..34.9 -> {
                 result = getString(R.string.label_imc_30)
                 binding.resultYour.setBackgroundColor(ContextCompat.getColor(this,
                     R.color.nivel4
@@ -78,7 +78,7 @@ class ResultActivity : AppCompatActivity() {
                 binding.titleHelp.text = getString(R.string.label_download_BMI)
                 binding.txtHelp.text = getString(R.string.label_text_download_BMI)
             }
-            imc in 35.0..40.0 -> {
+            imc in 34.91..40.0 -> {
                 result = getString(R.string.label_imc_35)
                 binding.resultYour.setBackgroundColor(ContextCompat.getColor(this,
                     R.color.nivel5
