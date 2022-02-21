@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">imcAPP</string>
+    <string name="app_name">IMC</string>
     <string name="label_peso">Peso (ex 65.8 kg)</string>
     <string name="label_altura">Altura(ex: 1,78m)</string>
     <string name="label_btn_calc">Calcular</string>
@@ -38,4 +38,5 @@
     <string name="label_tiltle_test_result">O que é Lorem Ipsum?</string>
     <string name="label_tiltle_result">Seu IMC é:</string>
     <string name="label_font_help">Fonte: https://www.tuasaude.com/imc/</string>
+    <string name="label_info">Saiba mais</string>
 </resources>
