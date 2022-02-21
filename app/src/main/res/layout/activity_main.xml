@@ -12,21 +12,34 @@
 
     <TextView
         android:id="@+id/titleTXT"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/label_title"
         android:textColor="@color/design_default_color_on_secondary"
         android:textAlignment="center"
-        android:textSize="32sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="32dp"
-        />
+        android:layout_marginHorizontal="32dp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saiba mais"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/titleTXT"
+        app:layout_constraintEnd_toStartOf="@+id/aboutBtn"
+        android:layout_marginTop="10dp" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/aboutTXT"
+        android:id="@+id/aboutBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
@@ -34,9 +47,19 @@
         android:layout_marginTop="8dp"
         android:layout_marginHorizontal="32dp"
         android:layout_marginBottom="32dp"
-        app:srcCompat="@drawable/ic_info"
+        app:srcCompat="@drawable/ic_info" />
 
-        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/alturaEDT"
+        android:hint="@string/label_altura"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="64dp"
+        style="@style/input_style"
+        app:layout_constraintBottom_toBottomOf="@id/pesoEDT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/aboutBtn"
+        app:layout_constraintVertical_bias="0.348"/>
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/pesoEDT"
@@ -50,35 +73,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.348"/>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/alturaEDT"
-        android:hint="@string/label_altura"
-        android:textStyle="bold"
-        android:layout_marginHorizontal="64dp"
-        style="@style/input_style"
-        app:layout_constraintBottom_toBottomOf="@id/pesoEDT"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/aboutTXT"
-        app:layout_constraintVertical_bias="0.348"/>
-
-    <TextView
-        android:id="@+id/resultTXT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:background="@color/white"
-        android:paddingVertical="32dp"
-        android:text="@string/label_result"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
 
     <Button
         android:id="@+id/botaoBTN"
@@ -86,17 +80,12 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:padding="16dp"
-        android:text="@string/label_btn"
+        android:text="@string/label_btn_calc"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="32dp"
         />
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

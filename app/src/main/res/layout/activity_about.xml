@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -10,7 +10,7 @@
         android:id="@+id/titleAbout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Índice de massa corporal"
+        android:text="@string/label_title_IMC"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textAlignment="textStart"
@@ -21,13 +21,11 @@
         android:layout_marginHorizontal="32dp"
         />
 
-    //colocar linha de divisão
-
     <TextView
         android:id="@+id/txtAbout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="      O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS)."
+        android:text="@string/label_about_text"
         android:textSize="15sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -37,12 +35,12 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="32dp"
         />
-    //colocar linha de divisão
-    <TextView
+
+   <TextView
         android:id="@+id/subtitleAbout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Como calcular"
+        android:text="@string/label_subtitle_IMC"
         android:textAlignment="textStart"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -51,12 +49,12 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAbout"
         android:layout_marginTop="12dp"
         android:layout_marginHorizontal="32dp"/>
-    //colocar linha de divisão
-    <TextView
+
+   <TextView
         android:id="@+id/txtCalc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em quilogramas e a altura em metros."
+        android:text="@string/label_text_calc"
         android:textSize="15sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -66,7 +64,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="32dp"
         />
-    //colocar linha de divisão
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgFormula"
@@ -83,7 +80,7 @@
         android:id="@+id/txtFont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fonte: https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal"
+        android:text="@string/label_font"
         android:textSize="12sp"
         android:textStyle="bold"
         android:textAlignment="textEnd"
@@ -96,12 +93,12 @@
 
 
     <Button
-        android:id="@+id/returnBTN"
+        android:id="@+id/returnBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:padding="16dp"
-        android:text="Retornar"
+        android:text="@string/label_btn_return"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
