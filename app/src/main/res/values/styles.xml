@@ -137,4 +137,8 @@
         <item name="android:layout_height">101dp</item>
         <item name="android:layout_marginTop">14dp</item>
     </style>
+
+    <style name="sourceItalic" parent="source">
+        <item name="android:textStyle">italic</item>
+    </style>
 </resources>

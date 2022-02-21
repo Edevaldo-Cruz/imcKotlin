@@ -55,7 +55,7 @@
         app:layout_constraintBottom_toTopOf="@id/returnBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        style="@style/source" />
+        style="@style/sourceItalic" />
 
 
     <Button
