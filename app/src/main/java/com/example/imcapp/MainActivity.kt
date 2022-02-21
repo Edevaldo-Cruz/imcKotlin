@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        botaoBTN.setOnClickListener {
+        botaoBtn.setOnClickListener {
           setListeners()
         }
 
@@ -43,25 +43,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(about)
     }
 
-    private fun clickResult() {
-        val result = Intent( this,
-            ResultActivity::class.java)
-        startActivity(result)
-    }
-
     private fun setListeners() {
 
-        binding.alturaEDT.doAfterTextChanged { text ->
+        binding.alturaEdt.doAfterTextChanged { text ->
             // Toast.makeText(this, text.toString(), Toast.LENGTH_SHORT).show()
         }
 
-        binding.pesoEDT.doOnTextChanged { text, _, _, _->
+        binding.pesoEdt.doOnTextChanged { text, _, _, _->
             // titleTXT, text = text
         }
 
-        binding.botaoBTN.setOnClickListener {
-            calcularIMC(binding.pesoEDT.text.toString(),
-                binding.alturaEDT.text.toString())
+        binding.botaoBtn.setOnClickListener {
+            calcularIMC(binding.pesoEdt.text.toString(),
+                binding.alturaEdt.text.toString())
         }
     }
 
@@ -77,7 +71,7 @@ class MainActivity : AppCompatActivity() {
              intent.putExtra("imc", imc)
              startActivity(intent)
          } else {
-             binding.titleTXT.text = "Preencha o campo Altura e o campo Peso!"
+             binding.titleApp.text = getString(R.string.label_warning)
          }
     }
 }

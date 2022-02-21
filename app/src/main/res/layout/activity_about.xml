@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -9,102 +8,62 @@
 
     <TextView
         android:id="@+id/titleAbout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/label_title_IMC"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textAlignment="textStart"
-        android:layout_marginTop="32dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginHorizontal="32dp"
-        />
+        style="@style/general_title" />
 
     <TextView
         android:id="@+id/txtAbout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/label_about_text"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_marginTop="14dp"
         app:layout_constraintTop_toBottomOf="@id/titleAbout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginHorizontal="32dp"
-        />
+        style="@style/general_text" />
 
    <TextView
         android:id="@+id/subtitleAbout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/label_subtitle_IMC"
-        android:textAlignment="textStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAbout"
-        android:layout_marginTop="12dp"
-        android:layout_marginHorizontal="32dp"/>
+       style="@style/general_title"/>
 
    <TextView
         android:id="@+id/txtCalc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/label_text_calc"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@id/subtitleAbout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginHorizontal="32dp"
+        style="@style/general_text"
+
         />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgFormula"
-        android:layout_width="305dp"
-        android:layout_height="101dp"
-        android:layout_marginTop="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtCalc"
-        app:srcCompat="@drawable/ic_imc" />
+        app:srcCompat="@drawable/ic_imc"
+        style="@style/formula" />
 
 
     <TextView
-        android:id="@+id/txtFont"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtSource"
         android:text="@string/label_font"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:textAlignment="textEnd"
-        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@id/returnBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginHorizontal="32dp"
-        />
+        style="@style/source" />
 
 
     <Button
         android:id="@+id/returnBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:padding="16dp"
         android:text="@string/label_btn_return"
-        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="32dp"
-        />
+        style="@style/general_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

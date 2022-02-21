@@ -39,4 +39,5 @@
     <string name="label_tiltle_result">Seu IMC é:</string>
     <string name="label_font_help">Fonte: https://www.tuasaude.com/imc/</string>
     <string name="label_info">Saiba mais</string>
+    <string name="label_warning">Preencha o campo Altura e o campo Peso!</string>
 </resources>

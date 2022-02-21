@@ -104,7 +104,7 @@ class ResultActivity : AppCompatActivity() {
                 binding.titleHelp.text = null
                 binding.txtHelp.text = "Revise os números digitado."
                 binding.subtitleResult.text = null
-                binding.fontHelp.text = null
+                binding.sourceHelp.text = null
             }
         }
         binding.resultYour.text = "Segundo os padrões internacionais você foi considerado como $result."
