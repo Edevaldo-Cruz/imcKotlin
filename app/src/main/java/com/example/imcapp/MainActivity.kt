@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        botaoBtn.setOnClickListener {
+        // Botão CALCULAR
+        calcBtn.setOnClickListener {
           setListeners()
         }
 
@@ -53,13 +54,14 @@ class MainActivity : AppCompatActivity() {
             // titleTXT, text = text
         }
 
-        binding.botaoBtn.setOnClickListener {
-            calcularIMC(binding.pesoEdt.text.toString(),
+        binding.calcBtn.setOnClickListener {
+            calculateNavigate(binding.pesoEdt.text.toString(),
                 binding.alturaEdt.text.toString())
         }
     }
 
-    private fun calcularIMC(peso: String, altura: String) {
+        // Calcula o valor do IMC e navega para activity_result lenvado as informações do imc.
+    private fun calculateNavigate(peso: String, altura: String) {
         val peso = peso.toFloatOrNull()
         val altura = altura.toFloatOrNull()
 
@@ -67,6 +69,7 @@ class MainActivity : AppCompatActivity() {
 
             val imc = peso / (altura * altura)
 
+             // Navegação e transpote da informação imc.
              val intent = Intent(this, ResultActivity::class.java)
              intent.putExtra("imc", imc)
              startActivity(intent)

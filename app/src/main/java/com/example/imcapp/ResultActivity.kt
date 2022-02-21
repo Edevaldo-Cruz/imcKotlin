@@ -17,21 +17,27 @@ class ResultActivity : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Função recover é inicializada junto com a construção da tela.
         recoverData()
 
+        // Botão de fechar
         btnClose.setOnClickListener {
             closeBtn()
         }
     }
     @SuppressLint("SetTextI18n")
     private fun recoverData() {
-            // val dec formata o IMC para conter duas casas decimais
+        // set configuração da casa decimais.
         val dec = DecimalFormat("###.00")
 
+        //Converte imc de string para float
         val imc = intent.getFloatExtra("imc",0.00f)
+
+        // Formarta o val imc conforme a val dec.
         val imcFormat = dec.format(imc)
         binding.resultIMC.text = imcFormat.toString()
         var result = "result"
+        //Condicionais para construir a tela.
         when {
             imc in 16.0..16.9 -> {
                 result = getString(R.string.label_imc_16)
@@ -109,6 +115,8 @@ class ResultActivity : AppCompatActivity() {
         }
         binding.resultYour.text = "Segundo os padrões internacionais você foi considerado como $result."
     }
+
+    //Retorna para activity main
     private fun closeBtn() {
        finish()
     }

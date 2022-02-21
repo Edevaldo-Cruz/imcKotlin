@@ -54,7 +54,7 @@
 
 
     <Button
-        android:id="@+id/botaoBtn"
+        android:id="@+id/calcBtn"
         android:text="@string/label_btn_calc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
