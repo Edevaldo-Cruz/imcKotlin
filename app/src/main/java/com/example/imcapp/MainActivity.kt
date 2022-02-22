@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         /*
             Primeira parte da função de navegação:
-                Selecionado o elemento para ação de navegação
+                Selecionado o elemento que vai receber o clique para ação de navegação
          */
         aboutBtn.setOnClickListener {
             clickAbout()
@@ -45,26 +45,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setListeners() {
-
         binding.alturaEdt.doAfterTextChanged { text ->
             // Toast.makeText(this, text.toString(), Toast.LENGTH_SHORT).show()
         }
-
         binding.pesoEdt.doOnTextChanged { text, _, _, _->
             // titleTXT, text = text
         }
-
         binding.calcBtn.setOnClickListener {
             calculateNavigate(binding.pesoEdt.text.toString(),
                 binding.alturaEdt.text.toString())
         }
     }
 
-        // Calcula o valor do IMC e navega para activity_result lenvado as informações do imc.
+        // Calcula o valor do IMC e navega para activity_result levando as informações do imc.
     private fun calculateNavigate(peso: String, altura: String) {
         val peso = peso.toFloatOrNull()
         val altura = altura.toFloatOrNull()
 
+         // Se o peso e a altura for  digitado, vai calcular o IMC e navegar para activityResult, se não estiver digitado vai ser exibido um aviso.
          if (peso != null && altura != null) {
 
             val imc = peso / (altura * altura)
