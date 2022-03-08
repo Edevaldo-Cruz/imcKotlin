@@ -107,14 +107,14 @@ class ResultActivity : AppCompatActivity() {
                 binding.resultIMC.text = getString(R.string.label_imc_Invalid)
                 binding.resultYour.setTextColor(ContextCompat.getColor(this, R.color.white))
                 binding.resultYour.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
-                binding.textResult.text =  "Os valores digitado não se enquadram nos paranmentros do calculo do IMC."
+                binding.textResult.text =  getString(R.string.label_text_error)
                 binding.titleHelp.text = null
-                binding.txtHelp.text = "Revise os números digitado."
+                binding.txtHelp.text = getString(R.string.label_text_warnner)
                 binding.subtitleResult.text = null
                 binding.sourceHelp.text = null
             }
         }
-        binding.resultYour.text = "Segundo os padrões internacionais você foi considerado como $result."
+        binding.resultYour.text = getString(R.string.label_text_result) + " $result."
     }
 
     // Retorna para activityMain

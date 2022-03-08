@@ -40,4 +40,7 @@
     <string name="label_font_help">Fonte: https://www.tuasaude.com/imc/</string>
     <string name="label_info">Saiba mais</string>
     <string name="label_warning">Preencha o campo Altura e o campo Peso!</string>
+    <string name="label_text_error">Os valores digitado não se enquadram nos paranmentros do calculo do IMC.</string>
+    <string name="label_text_warnner">Revise os números digitado.</string>
+    <string name="label_text_result">Segundo os padrões internacionais você foi considerado como</string>
 </resources>
